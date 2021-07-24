@@ -3,8 +3,11 @@ package ru.tbrumble.restapi.Model.Web;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import java.io.Serializable;
+
 @ApiModel(value = "Модель User пользователя системы", description = "Web модель пользователя системы для передачи по rest-ам")
-public class WebUser {
+public class WebUser implements Serializable {
+
     @ApiModelProperty(value = "Имя", dataType = "string", name = "firstName")
     private String firstName;
     @ApiModelProperty(value = "Фамилия", dataType = "string", name = "lastName")

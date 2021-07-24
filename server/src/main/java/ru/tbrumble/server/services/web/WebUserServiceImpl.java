@@ -1,9 +1,10 @@
-package ru.tbrumble.restapi.service.user.web;
+package ru.tbrumble.server.services.web;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import ru.tbrumble.restapi.Model.Web.WebUser;
 import ru.tbrumble.restapi.service.user.UserService;
+import ru.tbrumble.restapi.service.user.web.WebUserService;
 
 import java.util.ArrayList;
 import java.util.List;

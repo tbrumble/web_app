@@ -1,16 +1,14 @@
-package ru.tbrumble.restapi.service.user;
+package ru.tbrumble.server.services;
 
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import ru.tbrumble.restapi.Model.User;
-import ru.tbrumble.restapi.dao.UserDao;
-import ru.tbrumble.restapi.repository.user.UserRepository;
+import ru.tbrumble.server.dao.UserDao;
+import ru.tbrumble.restapi.service.user.UserService;
 
 import java.util.List;
 
 @AllArgsConstructor
-@Service
 public class UserServiceImpl implements UserService {
     @Autowired
     UserDao userDao;

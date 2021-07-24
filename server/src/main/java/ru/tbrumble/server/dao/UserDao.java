@@ -1,16 +1,18 @@
-package ru.tbrumble.restapi.dao;
+package ru.tbrumble.server.dao;
 
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.tbrumble.restapi.Model.User;
-import ru.tbrumble.restapi.repository.user.UserRepository;
+import ru.tbrumble.server.repository.UserRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class UserDao {
+    @Autowired
     UserRepository userRepository;
 
     public List<User> getUsers() {
