@@ -8,5 +8,4 @@ import java.util.List;
 
 @Repository
 public interface UserRepository extends MongoRepository<UserEntity, String> {
-    List<UserEntity> findAll();
 }
